@@ -10,7 +10,7 @@ $(function() {
     
     /* Resto de métodos */
     	
-    var socket = io();
+    var socket = io('https://peaceful-archimedes-d5b466.netlify.app/');
     socket.emit('user connected');
  
     socket.on('get score', (score) => {
