@@ -10,7 +10,7 @@ $(function() {
     
     /* Resto de métodos */
     	
-    var socket = io('https://peaceful-archimedes-d5b466.netlify.app/');
+    var socket = io('https://piedra-papel-tijeras-server.herokuapp.com/');
     socket.emit('user connected');
  
     socket.on('get score', (score) => {
